@@ -44,7 +44,7 @@ function logLapTime() {
 
 //logLapTime()
 
-let countEl = document.getElementById('count-el') . //this is called model
+let countEl = document.getElementById('count-el')
 
 console.log(countEl)
 
@@ -59,3 +59,9 @@ function save() {
     console.log(count)
 }
 
+
+let welcomeEl = document.getElementById('welcome-el')
+let yourName = 'Burn Lai'
+let greeting = 'Welcome back '
+
+welcomeEl.innerText = greeting + yourName
