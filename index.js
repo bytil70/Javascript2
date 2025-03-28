@@ -54,7 +54,7 @@ let count = 0
 
 function increment() {
     count += 1
-    countEl.innerText = count
+    countEl.textContent = count
     
 }
 
@@ -63,7 +63,8 @@ function increment() {
 function save() {
     let countStr = count + ' - '
     saveEl.textContent += countStr
-    console.log(count)
+    countEl.textContent = 0
+    count = 0
 }
 
 
