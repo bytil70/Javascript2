@@ -44,18 +44,25 @@ function logLapTime() {
 
 //logLapTime()
 
+let saveEl = document.getElementById('save-el')
 let countEl = document.getElementById('count-el')
 
 console.log(countEl)
+console.log(saveEl)
 
 let count = 0
+
 function increment() {
-    count = count + 1
+    count += 1
     countEl.innerText = count
     
 }
 
+// intertext alternative mdn (choose Node.textCounter - Web Apis | MDN)
+
 function save() {
+    let countStr = count + ' - '
+    saveEl.textContent += countStr
     console.log(count)
 }
 
@@ -65,3 +72,4 @@ let yourName = 'Burn Lai'
 let greeting = 'Welcome back '
 
 welcomeEl.innerText = greeting + yourName
+welcomeEl.innerText += '👏';
